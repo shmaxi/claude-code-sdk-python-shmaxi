@@ -43,4 +43,4 @@ class CLIJSONDecodeError(ClaudeSDKError):
     def __init__(self, line: str, original_error: Exception):
         self.line = line
         self.original_error = original_error
-        super().__init__(f"Failed to decode JSON: {line[:100]}...")
+        super().__init__(f"Failed to decode JSON: {line}...")
